@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import {Header}  from './components/Header';
+import Main from './pages/Main';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Search from './pages/Search';
+import TitlePage from './pages/Title Page';
+import './index.css';
+import { Footer } from './components/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+library.add(faMagnifyingGlass);
+
+
+export class App extends Component {
+
+    /*render*/
+  render() {
+    return (
+      <div className='container pt-[70px] lg:pt-0'>
+        <Header />
+        <Router>
+          <Routes>
+            <Route path="/" element={<Main />}   />
+            <Route path="/search/:request" element={<Search /> } />
+            <Route path="/title/:id" element={<TitlePage />} />
+          </Routes>
+        </Router>
+        <Footer/>
+      </div>
+    ) 
+  }
+
+
 }
 
-export default App;
+export default App
+
+
+/*
+            <Route path="/search/:query" element={<Search request={this.state.request} /> } />
+
+*/
