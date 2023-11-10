@@ -8,6 +8,7 @@ import Search from './pages/Search';
 import TitlePage from './pages/Title Page';
 import './index.css';
 import { Footer } from './components/Footer';
+import PageNotFound from './pages/Page not ready';
 
 library.add(faMagnifyingGlass);
 
@@ -21,9 +22,10 @@ export class App extends Component {
         <Header />
         <Router>
           <Routes>
-            <Route path="/" element={<Main />}   />
+            <Route path="/" element={<Main />}   />  
             <Route path="/search/:request" element={<Search /> } />
             <Route path="/title/:id" element={<TitlePage />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Router>
         <Footer/>

@@ -17,14 +17,14 @@ export const Footer = () => {
             <FontAwesomeIcon className='lg:hidden text-[#fff]' icon={faChevronDown} />
           </div>
           <div id='FooterGenresToggled' className="toggled h-[0px] flex flex-col gap-[12px] px-[15px] py-[15px] lg:py-[0]">
-            <a className='text-[20px] xl:text-[24px]' href="">Action</a>
-            <a className='text-[20px] xl:text-[24px]' href="">Comedy</a>
-            <a className='text-[20px] xl:text-[24px]' href="">Adventure</a>
-            <a className='text-[20px] xl:text-[24px]' href="">Drama</a>
-            <a className='text-[20px] xl:text-[24px]' href="">Fantasy</a>
-            <a className='text-[20px] xl:text-[24px]' href="">Romance</a>
-            <a className='text-[20px] xl:text-[24px]' href="">Sci-Fi</a>
-            <a className='text-[20px] xl:text-[24px]' href="">All genres</a>
+            <a className='text-[20px] xl:text-[24px]' href="/action">Action</a>
+            <a className='text-[20px] xl:text-[24px]' href="/comedy">Comedy</a>
+            <a className='text-[20px] xl:text-[24px]' href="/adventure">Adventure</a>
+            <a className='text-[20px] xl:text-[24px]' href="/drama">Drama</a>
+            <a className='text-[20px] xl:text-[24px]' href="/fantasy">Fantasy</a>
+            <a className='text-[20px] xl:text-[24px]' href="/romance">Romance</a>
+            <a className='text-[20px] xl:text-[24px]' href="/scifi">Sci-Fi</a>
+            <a className='text-[20px] xl:text-[24px]' href="/all">All genres</a>
           </div>
         </div>
         <div id='FooterNavigation' className="nav__block flex flex-col lg:w-[50%]" onClick={(e) => toggleNav(e)}>
@@ -51,9 +51,9 @@ export const Footer = () => {
               <FontAwesomeIcon className='text-[#fff] rounded-[100px] border-solid border-white border-[1px] p-[13px]' icon={faTelegram} />
             </div>
             <div className="links flex gap-[10px]">
-              <a className='' href="">Terms of Use</a>
-              <a className='' href="">Privacy Police</a>
-              <a className='' href="">Site Map</a>
+              <a className='' href="/terms">Terms of Use</a>
+              <a className='' href="/privacy">Privacy Police</a>
+              <a className='' href="/map">Site Map</a>
             </div>
       </div>
     </footer>

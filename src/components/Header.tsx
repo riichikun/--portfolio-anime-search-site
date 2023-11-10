@@ -40,11 +40,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
             </div> 
             <nav className="lg-nav hidden lg:flex justify-between items-center w-[90%]">
               <div className='left-nav flex gap-[37px]'>
-                <a className='text-[20px] xl:text-[24px]' href="/">Top</a>
-                <a className='text-[20px] xl:text-[24px]' href="/">Airing now</a>
-                <a className='text-[20px] xl:text-[24px]' href="/">Genres</a>
-                <a className='text-[20px] xl:text-[24px]' href="/">News</a>
-                <a className='text-[20px] xl:text-[24px]' href="/">About us</a>
+                <a className='text-[20px] xl:text-[24px]' href="/top">Top</a>
+                <a className='text-[20px] xl:text-[24px]' href="/airing">Airing now</a>
+                <a className='text-[20px] xl:text-[24px]' href="/genres">Genres</a>
+                <a className='text-[20px] xl:text-[24px]' href="/news">News</a>
+                <a className='text-[20px] xl:text-[24px]' href="/about">About us</a>
               </div>
               <div className="right-nav flex items-center gap-[20px]">
                 <div className="lg-search relative">
@@ -61,7 +61,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
                   </form>
                 </div>
               
-                <a className='text-[20px] xl:text-[24px] min-w-fit' href="">Sign in</a>
+                <a className='text-[20px] xl:text-[24px] min-w-fit' href="/sign-in">Sign in</a>
               </div>
             </nav>
         </div>
